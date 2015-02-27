@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibliotecaClassLibrary", "BibliotecaClassLibrary\BibliotecaClassLibrary.csproj", "{5E8F4A4E-0F33-433F-AC5B-3B3DE5A80C02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibliotecaConsole", "BibliotecaConsole\BibliotecaConsole.csproj", "{AD4432EA-CF19-42E5-B4D3-47873CE2B9CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E8F4A4E-0F33-433F-AC5B-3B3DE5A80C02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E8F4A4E-0F33-433F-AC5B-3B3DE5A80C02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E8F4A4E-0F33-433F-AC5B-3B3DE5A80C02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E8F4A4E-0F33-433F-AC5B-3B3DE5A80C02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD4432EA-CF19-42E5-B4D3-47873CE2B9CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD4432EA-CF19-42E5-B4D3-47873CE2B9CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD4432EA-CF19-42E5-B4D3-47873CE2B9CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD4432EA-CF19-42E5-B4D3-47873CE2B9CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
