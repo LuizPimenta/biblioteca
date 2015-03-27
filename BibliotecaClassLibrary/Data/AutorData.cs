@@ -21,15 +21,58 @@ namespace BibliotecaClassLibrary.Data
             cmd.ExecuteNonQuery();
         }
 
-        internal void update(Autor e)
+        internal void Update(Autor e)
         {
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = conn;
-            cmd.CommandText = "Update Autor set nome = @nome where id = @id";
+            cmd.CommandText = "Update Autor set nome = @nome where idAutor = @id";
             cmd.Parameters.AddWithValue("@id", e.IdAutor);
-            cmd.Parameters.AddWithValue("@Nome", e.Nome);
+            cmd.Parameters.AddWithValue("@nome", e.Nome);
             cmd.ExecuteNonQuery();
         }
 
+        internal void Delete(int id)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = conn;
+            cmd.CommandText = " Delete from Autor where idAutor = @id";
+            cmd.Parameters.AddWithValue("@id", id);
+            cmd.ExecuteNonQuery();
+        }
+
+        internal Autor Read(int id)
+        {
+            Autor a = null;
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = conn;
+            cmd.CommandText = "Select * from Autor where idAutor = @id";
+            cmd.Parameters.AddWithValue("@id", id);
+            SqlDataReader reader = cmd.ExecuteReader();
+            if (reader.Read())
+            {
+                a = new Autor();
+                a.IdAutor = (int)reader["IdAutor"];
+                a.Nome = (string)reader["Nome"];
+
+            }
+            return a;
+        }
+        internal List<Autor> Read()
+        {
+            List<Autor> lista = new List<Autor>();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = conn;
+            cmd.CommandText = "Select * from Autor";
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                Autor a = new Autor();
+                a.IdAutor = (int)reader["IdAutor"];
+                a.Nome = (string)reader["Nome"];
+                lista.Add(a);
+            }
+            return lista;
+
+        }
     }
 }

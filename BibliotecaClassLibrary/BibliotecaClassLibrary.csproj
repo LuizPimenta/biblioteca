@@ -42,15 +42,17 @@
     <Compile Include="Data\AutorData.cs" />
     <Compile Include="Data\CategoriaData.cs" />
     <Compile Include="Data\DBConnection.cs" />
+    <Compile Include="Data\UsuarioData.cs" />
     <Compile Include="Entity\Autor.cs" />
     <Compile Include="Entity\Categoria.cs" />
     <Compile Include="Entity\Livro.cs" />
     <Compile Include="Entity\Usuario.cs" />
+    <Compile Include="Model\AutorModel.cs" />
+    <Compile Include="Model\CategoriaModel.cs" />
+    <Compile Include="Model\UsuarioModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Model\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

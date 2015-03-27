@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace BibliotecaClassLibrary.Data
 {
-    internal class DBConnection
+    internal class DBConnection:IDisposable
     {
         protected SqlConnection conn;
 
@@ -18,7 +18,7 @@ namespace BibliotecaClassLibrary.Data
             conn.Open();
         }
 
-        internal void Dispose()
+        public void Dispose()
         {
             conn.Close();
         }
