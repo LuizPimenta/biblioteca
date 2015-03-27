@@ -14,7 +14,7 @@ namespace BibliotecaConsole
         {
             string strConn = System.Configuration.ConfigurationSettings.AppSettings["strConn"];
 
-            string op = "";
+            string op = "":
             do
             {
                 Console.WriteLine("Digite a opção: ");
