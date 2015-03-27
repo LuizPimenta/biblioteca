@@ -42,6 +42,7 @@
     <Compile Include="Data\AutorData.cs" />
     <Compile Include="Data\CategoriaData.cs" />
     <Compile Include="Data\DBConnection.cs" />
+    <Compile Include="Data\LivroData.cs" />
     <Compile Include="Data\UsuarioData.cs" />
     <Compile Include="Entity\Autor.cs" />
     <Compile Include="Entity\Categoria.cs" />
@@ -49,6 +50,7 @@
     <Compile Include="Entity\Usuario.cs" />
     <Compile Include="Model\AutorModel.cs" />
     <Compile Include="Model\CategoriaModel.cs" />
+    <Compile Include="Model\LivroModel.cs" />
     <Compile Include="Model\UsuarioModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

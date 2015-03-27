@@ -8,26 +8,26 @@ using BibliotecaClassLibrary.Data;
 
 namespace BibliotecaClassLibrary.Model
 {
-    public class CategoriaModel
+    public class LivroModel
     {
         private string strConn;
-        public CategoriaModel(string strConn)
+        public LivroModel(string strConn)
         {
             this.strConn = strConn;
         }
 
-        public void Create(Categoria e)
+        public void Create(Livro e)
         {
-            using (CategoriaData data = new CategoriaData(strConn))
+            using (LivroData data = new LivroData(strConn))
             { 
                 data.Create(e); 
             }
             
         }
 
-        public void Update(Categoria e)
+        public void Update(Livro e)
         {
-            using (CategoriaData data = new CategoriaData(strConn))
+            using (LivroData data = new LivroData(strConn))
             {
                 data.Update(e);
             }
@@ -35,25 +35,25 @@ namespace BibliotecaClassLibrary.Model
         }
         public void Delete(int id)
         {
-            using (CategoriaData data = new CategoriaData(strConn))
+            using (LivroData data = new LivroData(strConn))
             {
                 data.Delete(id);
             }
 
         }
 
-        public Categoria Read(int id)
+        public Livro Read(int id)
         {
-            using (CategoriaData data = new CategoriaData(strConn))
+            using (LivroData data = new LivroData(strConn))
             {
                 return data.Read(id);
             }
 
         }
 
-        public List<Categoria> Read()
+        public List<Livro> Read()
         {
-            using (CategoriaData data = new CategoriaData(strConn))
+            using (LivroData data = new LivroData(strConn))
             {
                 return data.Read();
             }
